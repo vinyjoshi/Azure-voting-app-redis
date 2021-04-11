@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../static/default.css">
+        <title>Document</title>
+    </head>
+<body>
+        <div id="logo1" style="float: center margin-top">Azure MCQ App</div><br>
+        <div id="space"></div>
+        <div id="form1" style="float: left">
+            <div id="logo" style="float: left">Q. KursInformation will go live on?</div><br>
+            <button id="btn1"  class="button button1">1 May 2021</button>
+            <button id="btn2"  class="button button2">1 Feb 2021</button>
+            <button id="btn3"  class="button button3">1 Jun 2021</button>
+            <button id="btn4"  class="button button4">1 July 2021</button>
+            <div id="space1"></div>
+            <div id="space2"></div>
+        </div>
+
+        <div id="space"></div>
+        <div id="form2" style="float: right">
+            <div id="logo" style="float: right">Q. MittHjem will go live on?</div>
+            <button id="btn5" class="button button1">1 Jan 2021</button>
+            <button id="btn6" class="button button3">1 Aug 2021</button>
+            <button id="btn7" class="button button2">1 Feb 2021</button>
+            <button id="btn8" class="button button4">1 Sep 2021</button>
+            <div id="space1"></div>
+            <div id="space2"></div>
+        </div>
+    <script language="JavaScript">
+
+
+        let btn1 = document.querySelector('#btn1');
+        let btn2 = document.querySelector('#btn2');
+        let btn3 = document.querySelector('#btn3');
+        let btn4 = document.querySelector('#btn4');
+        let btn5 = document.querySelector('#btn5');
+        let btn6 = document.querySelector('#btn6');
+        let btn7 = document.querySelector('#btn7');
+        let btn8 = document.querySelector('#btn8');
+
+
+        btn1.addEventListener('click', ()=> {
+            btn1.style.backgroundColor='red';
+            btn2.disabled = true;
+            btn3.disabled = true;
+            btn4.disabled = true;
+
+        })
+        btn2.addEventListener('click', ()=> {
+            btn2.style.backgroundColor='red';
+            btn1.disabled = true;
+            btn3.disabled = true;
+            btn4.disabled = true;
+        })
+        btn3.addEventListener('click', ()=> {
+            btn3.style.backgroundColor='green';
+            btn2.disabled = true;
+            btn1.disabled = true;
+            btn4.disabled = true;
+        })
+        btn4.addEventListener('click', ()=> {
+            btn4.style.backgroundColor='red';
+            btn2.disabled = true;
+            btn3.disabled = true;
+            btn1.disabled = true;
+        })
+        btn5.addEventListener('click', ()=> {
+            btn5.style.backgroundColor='red';
+            btn6.disabled = true;
+            btn7.disabled = true;
+            btn8.disabled = true;
+        })
+        btn6.addEventListener('click', ()=> {
+            btn6.style.backgroundColor='green';
+            btn5.disabled = true;
+            btn7.disabled = true;
+            btn8.disabled = true;
+        })
+        btn7.addEventListener('click', ()=> {
+            btn7.style.backgroundColor='red';
+            btn6.disabled = true;
+            btn5.disabled = true;
+            btn8.disabled = true;
+        })
+        btn8.addEventListener('click', ()=> {
+            btn8.style.backgroundColor='red';
+            btn7.disabled = true;
+            btn6.disabled = true;
+            btn5.disabled = true;
+        })
+    </script>
+</body>
+</html>
